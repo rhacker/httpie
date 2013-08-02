@@ -442,7 +442,7 @@ class AutoContentTypeAndAcceptHeadersTest(BaseTestCase):
     def test_GET_with_data_auto_JSON_headers(self):
         # JSON headers should automatically be set also for GET with data.
         r = http(
-            'POST',
+            'GET',
             httpbin('/post'),
             'a=b'
         )
